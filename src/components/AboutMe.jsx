@@ -2,10 +2,12 @@ import React from "react";
 // Styles
 import styled from "styled-components";
 // State
+import { useSelector } from "react-redux";
+import { selectMode } from "../app/appSlice";
 import PropTypes from "prop-types";
 // Components
 import { Element } from "react-scroll";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import Title from "./Title";
 
 // #region styled-components
@@ -27,11 +29,13 @@ const propTypes = {
   moreInfo: PropTypes.string,
 };
 
-const AboutMe = ({ avatar_url, bio, moreInfo }) => {
+const AboutMe = ({ avatar_url, bio, moreInfo, resume }) => {
+  const theme = useSelector(selectMode);
+
   return (
     <Element name={"About"} id="about">
       <StyledAboutMe className="section">
-        <Container>
+        <Container className="text-center">
           <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"About Me"} />
           </Container>
@@ -52,6 +56,19 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
                 style={{ width: "15rem", height: "15rem" }}
               />
             </Col>
+          </Row>
+          <Row className="align-items-center mt-5">
+          {resume && (
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                variant={theme === "light" ? "outline-dark" : "outline-light"}
+                className="mt-5"
+              >
+                R&eacute;sum&eacute;
+              </Button>
+            </a>
+            )}
           </Row>
         </Container>
       </StyledAboutMe>

@@ -9,7 +9,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import BackToTop from "../components/BackToTop";
 // Config
-import { filteredProjects, moreInfo } from "../config";
+import { filteredProjects, moreInfo, resume } from "../config";
 // Utils
 import { updateTitle } from "../utils";
 
@@ -29,6 +29,7 @@ const Home = () => {
           avatar_url={userData.avatar_url}
           bio={userData.bio}
           moreInfo={moreInfo}
+          resume={resume}
         />
         <Skills />
         <Projects filteredProjects={filteredProjects} />
