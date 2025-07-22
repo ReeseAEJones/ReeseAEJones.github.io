@@ -1,5 +1,5 @@
 // Skills icons - https://icon-sets.iconify.design/
-import { Icon } from "@iconify/react";
+import { IconifyIcon } from "@iconify/types";
 
 // Navbar Logo image (add your image to the src/images directory and uncomment the line below to import your image)
 // import newLogo from "./images/yourFileName"
@@ -41,50 +41,59 @@ export const moreInfo =
  ************************************************************** 
   Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/
 */
-export const skillData = [
+
+// Define the interface for skill items:
+interface SkillItem {
+  id: number;
+  skill: Icon;
+  name: string;
+}
+
+// Update skillData to use the interface:
+export const skillData: SkillItem[] = [
   {
     id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
+    skill: '<Icon icon="mdi:language-html5" className="display-4" />',
     name: "HTML5",
   },
   {
     id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
+    skill: '<Icon icon="ion:logo-css3" className="display-4" />',
     name: "CSS3",
   },
   {
     id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
+    skill: '<Icon icon="fa6-brands:js" className="display-4" />',
     name: "JavaScript",
   },
   {
     id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
+    skill: '<Icon icon="ri:bootstrap-fill" className="display-4" />',
     name: "BootStrap",
   },
   {
     id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
+    skill: '<Icon icon="mdi:react" className="display-4" />',
     name: "React",
   },
   {
     id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
+    skill: '<Icon icon="file-icons:styledcomponents" className="display-4" />',
     name: "Styled Components",
   },
   {
     id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
+    skill: '<Icon icon="akar-icons:redux-fill" className="display-4" />',
     name: "Redux",
   },
   {
     id: 8,
-    skill: <Icon icon="bi:git" className="display-4" />,
+    skill: '<Icon icon="bi:git" className="display-4" />',
     name: "Git",
   },
   {
     id: 9,
-    skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
+    skill: '<Icon icon="fa6-brands:square-github" className="display-4" />', 
     name: "GitHub",
   },
 ];

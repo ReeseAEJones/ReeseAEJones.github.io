@@ -1,6 +1,11 @@
 // https://redux-toolkit.js.org/usage/usage-guide#simplifying-slices-with-createslice
 import { createSlice } from "@reduxjs/toolkit";
 
+export interface ProjectState {
+  projects: [],
+  mainProjects: [],
+};
+
 const initialState = {
   projects: [],
   mainProjects: [],
@@ -19,8 +24,8 @@ export const projectsSlice = createSlice({
   },
 });
 
-export const selectProjects = (state) => state.projects.projects;
-export const selectMainProjects = (state) => state.projects.mainProjects;
+export const selectProjects = (state: {projects: ProjectState}) => state.projects.projects;
+export const selectMainProjects = (state: {projects: ProjectState}) => state.projects.mainProjects;
 export const { setProjects, setMainProjects } = projectsSlice.actions;
 
 export default projectsSlice.reducer;
