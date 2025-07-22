@@ -2,8 +2,11 @@
 
 The is the repo for my Github Pages Portfolio.
 
+## Live Demo
+
 The portfolio can be seen here:
-[LIVE DEMO](https://reeseaejones.github.io/)
+
+[Live Demo](https://reeseaejones.github.io/)
 
 ### License
 
