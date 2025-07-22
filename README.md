@@ -3,7 +3,7 @@
 The is the repo for my Github Pages Portfolio.
 
 The portfolio can be seen here:
-https://reeseaejones.github.io/
+[LIVE DEMO](https://reeseaejones.github.io/)
 
 ### License
 
