@@ -40,6 +40,7 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
               <Container>
                 {bio && <p>{bio}</p>}
                 {moreInfo && <p>{moreInfo}</p>}
+                {<p>This site was built with React, React Bootstrap, Redux, and the GitHub REST API.</p>}
               </Container>
             </Col>
             <Col className="d-none d-md-block text-center">

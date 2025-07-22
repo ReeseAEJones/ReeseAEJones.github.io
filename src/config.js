@@ -9,7 +9,11 @@ import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+import Daggerheart from "./images/Daggerheart_logo.png";
+import ReeseJonesLogo from "./images/Reese_Jones_Logo.png";
+import CloudLogo from "./images/Cloud_Logo.png";
+import EmulationStationLogo from "./images/logo_es.png";
+import DandyHacksLogo from "./images/DandyHacks2018.png";
 
 /* START HERE
  **************************************************************
@@ -35,7 +39,7 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+  "I am adaptive to handling complex challenges with strong problem - solving abilities and able to manage projects effectively. Additionly I have proven success in code integration and management, with a commitment to secure coding practices, informed by cybersecurity experience and a background in code analysis and optimization research.";
 
 /* Skills
  ************************************************************** 
@@ -43,39 +47,68 @@ export const moreInfo =
 */
 export const skillData = [
   {
-    id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
-    name: "HTML5",
+    skill: <Icon icon="proicons:python" className="display-4" />,
+    name: "Python",
   },
   {
-    id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
-    name: "CSS3",
+    skill: <Icon icon="nonicons:c-plusplus-16" className="display-4" />,
+    name: "C/C++",
   },
   {
-    id: 3,
+    skill: <Icon icon="fa6-brands:golang" className="display-4" />,
+    name: "GoLang",
+  },
+  {
+    skill: <Icon icon="cib:java" className="display-4" />,
+    name: "Java",
+  },
+  {
+    skill: <Icon icon="cib:spring" className="display-4" />,
+    name: "Spring",
+  },
+  {
     skill: <Icon icon="fa6-brands:js" className="display-4" />,
     name: "JavaScript",
   },
   {
-    id: 4,
+    skill: <Icon icon="mdi:language-html5" className="display-4" />,
+    name: "HTML5",
+  },
+  {
+    skill: <Icon icon="ion:logo-css3" className="display-4" />,
+    name: "CSS3",
+  },
+  {
     skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
     name: "BootStrap",
   },
   {
-    id: 5,
     skill: <Icon icon="mdi:react" className="display-4" />,
     name: "React",
   },
   {
-    id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
-  },
-  {
-    id: 7,
     skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
     name: "Redux",
+  },
+  {
+    skill: <Icon icon="ph:file-sql-fill" className="display-4" />,
+    name: "SQL",
+  },
+  {
+    skill: <Icon icon="devicon-plain:redis" className="display-4" />,
+    name: "Redis",
+  },
+  {
+    skill: <Icon icon="mdi:aws" className="display-4" />,
+    name: "AWS",
+  },
+  {
+    skill: <Icon icon="tabler:brand-snowflake" className="display-4" />,
+    name: "Snowflake",
+  },
+  {
+    skill: <Icon icon="simple-icons:looker" className="display-4" />,
+    name: "Looker",
   },
   {
     id: 8,
@@ -90,19 +123,35 @@ export const skillData = [
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume = "./ReeseAEJones-Resume.pdf";
 
 /* Projects
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["daggerheart", "Richmond-Weather-Station", "ReeseAEJones.github.io"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "daggerheart",
+    image: Daggerheart,
+  },
+  {
+    name: "Richmond-Weather-Station",
+    image: CloudLogo,
+  },
+  {
+    name: "ReeseAEJones.github.io",
+    image: ReeseJonesLogo,
+  },
+  {
+    name: "EmulationStation",
+    image: EmulationStationLogo,
+  },
+  {
+    name: "visual-education",
+    image: DandyHacksLogo,
   },
 ];
 
