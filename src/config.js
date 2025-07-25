@@ -122,16 +122,14 @@ export const skillData = [
   },
 ];
 
-// Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 export const resume = "./ReeseAEJones_Resume_2025.pdf";
 
 /* Projects
  ************************************************************** 
-  List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
 export const filteredProjects = ["daggerheart", "Richmond-Weather-Station", "ReeseAEJones.github.io"];
 
-// Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
+// Replace the defualt GitHub image for matching repos below 
 export const projectCardImages = [
   {
     name: "daggerheart",
@@ -157,10 +155,7 @@ export const projectCardImages = [
 
 /* Contact Info
  ************************************************************** 
-  Add your formspree endpoint below.
-  https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
 
 // Footer icons theme (light or dark)
 export const footerTheme = "dark";

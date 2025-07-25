@@ -57,6 +57,9 @@ const SocialLinks = () => {
             case "tiktok":
               icon = <Icon icon="fa-brands:tiktok" />;
               break;
+            case "bluesky":
+              icon = <Icon icon="ph:butterfly-fill" />;
+              break;
 
             default:
               icon = <Icon icon="ph:link-bold" />;
