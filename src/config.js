@@ -39,7 +39,7 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I am adaptive to handling complex challenges with strong problem - solving abilities and able to manage projects effectively. Additionly I have proven success in code integration and management, with a commitment to secure coding practices, informed by cybersecurity experience and a background in code analysis and optimization research.";
+  "I am adaptive to handling complex challenges with strong problem - solving abilities and able to manage projects effectively. Additionally, I have proven success in code integration and management, with a commitment to secure coding practices, informed by cybersecurity experience and a background in code analysis and optimization research.";
 
 /* Skills
  ************************************************************** 
